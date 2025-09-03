@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DesignCraft - Professional Graphic Design Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cool.css" />
+  <link rel="stylesheet" href="boom.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header .logo {
+      font-size: 20px;
+      font-weight: 700;
+      color: #5A31F4;
+      display: flex;
+      align-items: center;
+    }
+    header .logo img {
+      width: 24px;
+      margin-right: 8px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .btn-primary {
+      padding: 10px 20px;
+      background: #5A31F4;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 60px;
+      gap: 40px;
+    }
+    .hero h1 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #111;
+      font-size: 56px;
+    }
+    .hero h1 span {
+      color: #5A31F4;
+      
+    }
+    .hero p {
+      margin: 20px 0;
+      font-size: 25px;
+      color: #555;
+    }
+    .stats {
+      display: flex;
+      gap: 30px;
+      margin: 20px 0;
+      font-weight: 600;
+      color: #5A31F4;
+    }
+    .hero-buttons a {
+      margin-right: 10px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn-outline {
+      border: 1px solid #ccc;
+      color: #333;
+    }
+    .hero img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .available-badge {
+      display: inline-block;
+      margin-top: 10px;
+      background: #fff;
+      border-radius: 20px;
+      padding: 6px 12px;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .available-badge::before {
+      content: "•";
+      color: #16a34a;
+      font-weight: bold;
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://img.icons8.com/fluency/48/design.png" alt="logo"> DesignCraft
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#" class="btn-primary">Get Started</a>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Professional <span>Graphic <br> Design</span> Services</h1>
+      <p>Transform your brand with stunning website layouts and minimalist logos. Expert design solutions that captivate and convert.</p>
+      <div class="stats">
+        <div>500+ Projects</div>
+        <div>98% Satisfaction</div>
+        <div>24h Delivery</div>
+      </div>
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary">Start Your Project</a>
+        <a href="#" class="btn-outline">View Portfolio</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://i.ibb.co.com/ynvD4gZT/asset-36.jpg" alt="Workspace">
+      <div class="available-badge">Available Now</div>
+    </div>
+  </section>
+
+  <section class="design-services">
+        <div class="container">
+            <h1 class="title">Design Services</h1>
+            <p class="subtitle">
+                Comprehensive design solutions tailored to elevate your brand and digital presence
+            </p>
+
+            <div class="services">
+                <!-- Website Landing Pages -->
+                <div class="card card-blue">
+                    <div class="icon">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <h3>Website Landing Pages</h3>
+                    <p>High-converting landing page designs that capture attention and drive action</p>
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>UX Optimization</li>
+                        <li>Fast Delivery</li>
+                    </ul>
+                </div>
+
+                <!-- Minimalist Logos -->
+                <div class="card card-pink">
+                    <div class="icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3>Minimalist Logos</h3>
+                    <p>Clean, memorable logo designs that perfectly represent your brand identity</p>
+                    <ul>
+                        <li>Multiple Concepts</li>
+                        <li>Vector Files</li>
+                        <li>Brand Guidelines</li>
+                    </ul>
+                </div>
+
+                <!-- Complete Packages -->
+                <div class="card card-green">
+                    <div class="icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                    <h3>Complete Packages</h3>
+                    <p>Full design packages including logo and landing page for complete brand solutions</p>
+                    <ul>
+                        <li>Brand Consistency</li>
+                        <li>Cost Effective</li>
+                        <li>Priority Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="recent-work">
+    <div class="container">
+      <!-- Section Title -->
+      <h2 class="title">Recent Work</h2>
+      <p class="subtitle">A showcase of our latest design projects</p>
+
+      <!-- Cards Wrapper -->
+      <div class="work-cards">
+        <!-- Card 1 -->
+        <div class="work-card">
+          <div class="image">
+            <img src="https://i.ibb.co.com/p6VdqTk9/asset-31.jpg" alt="Tech Startup Landing">
+          </div>
+          <div class="content">
+            <h3>Tech Startup Landing</h3>
+            <p>Modern landing page with conversion focus</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="work-card">
+          <div class="image">
+            <img src="https://i.ibb.co.com/jP7H4k07/asset-30.jpg" alt="Brand Identity Suite">
+          </div>
+          <div class="content">
+            <h3>Brand Identity Suite</h3>
+            <p>Complete logo and brand guidelines</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="work-card">
+          <div class="image">
+            <img src="https://i.ibb.co.com/d479NhFk/asset-32.jpg" alt="E-commerce Platform">
+          </div>
+          <div class="content">
+            <h3>E-commerce Platform</h3>
+            <p>User-friendly online store design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Call to Action Section -->
+  <section class="cta-section">
+    <h1>Ready to Transform Your Brand?</h1>
+    <p>Let’s create stunning designs that make your brand stand out and drive results</p>
+    <div class="cta-buttons">
+      <a href="#" class="btn btn-primary">Start Your Project</a>
+      <a href="#" class="btn btn-outline">Schedule Consultation</a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo & About -->
+      <div class="footer-col">
+        <h2 class="logo"><i class="fa-solid fa-palette"></i> DesignCraft</h2>
+        <p>Professional graphic design services for modern businesses</p>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#">Website Design</a></li>
+          <li><a href="#">Logo Design</a></li>
+          <li><a href="#">Brand Identity</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul class="contact-info">
+          <li><i class="fa-solid fa-envelope"></i> hello@designcraft.com</li>
+          <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Forhadul Masum. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

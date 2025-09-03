@@ -1,0 +1,133 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Section Title */
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+
+/* Cards Layout */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Card */
+.card {
+    background: #f9fafb;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Icons */
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.card-blue .icon {
+    background-color: #7a77ff;
+}
+
+.card-pink .icon {
+    background-color: #ff6fa9;
+}
+
+.card-green .icon {
+    background-color: #4ade80;
+}
+
+/* Card Title */
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+/* Card Description */
+.card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Card List */
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    color: #333;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.card ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #22c55e;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+}
